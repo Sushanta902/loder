@@ -1,0 +1,27 @@
+#red
+{
+animation: redcircle 1s linear infinite;
+}
+
+@keyframes redcircle
+ {
+   0%{left:47%;}
+   40%{height:13px;width:13px;}
+   50%{left:50%;height:10px;width:10px;}
+   60%{}
+   100%{left:47%;}
+ }
+
+#sky
+{
+  animation: bluecircle 1s linear infinite;
+}
+
+@keyframes bluecircle
+ {
+   0%{left:50%;}
+   40%{}
+   50%{left:47%;height:10px;width:10px;}
+   60%{height:13px;width:13px;}
+   100%{left:50%;}
+ }
