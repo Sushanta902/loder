@@ -8,18 +8,20 @@
 }
 
 body {
+ 
+
+
   margin: 0;
   font-family: Arial;
   font-size: 17px;
+  background-image: url('bc.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
+
 
 #content {
   position: fixed;
@@ -31,7 +33,7 @@ body {
   padding: 20px;
 }
 .glow {
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -59,52 +61,19 @@ body {
   cursor: pointer;
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-  .bg-image {
-  /* The image used */
-  background-image: url("/a.gif");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-}
+
+
+
 </style>
 </head>
 <body>
 
-  <div class="bg-image"></div>
-
-<div id="content" class="glow">
-  <h1>Happy New Year 2021!</h1>
+<div id="content" >
+  <h1 class="glow">Happy New Year 2021!</h1>
   <p>Presented By Sushanta Neupane!</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
 
 </body>
 </html>
