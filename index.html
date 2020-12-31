@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
 }
 
- @media screen and (max-width: 480px) {
-    .bag {
-        display: hidden !important;
-    }
-}
 body {
   margin: 0;
   font-family: Arial;
@@ -67,18 +62,31 @@ body {
 #myBtn:hover {
   background: #ddd;
   color: black;
+  .bg-image {
+  /* The image used */
+  background-image: url("a.gif");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 </style>
 </head>
 <body>
 
-<video playsinline autoplay muted loop id="myVideo">
-  <source src="/b.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+  <div class="bg-image"></div>
 
 <div id="content" class="glow">
-  <h1>Happy New Year 2021!</h1><img class="bag" src="/a.gif">
+  <h1>Happy New Year 2021!</h1>
   <p>Presented By Sushanta Neupane!</p>
   <button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
